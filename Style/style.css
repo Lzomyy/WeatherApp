@@ -1,0 +1,121 @@
+:root {
+    --color-of-backGround: #1E202B;
+    --color-of-blue: #009AD8;
+}
+
+body {
+    background-color: var(--color-of-backGround);
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 50px;
+}
+
+nav .container .left {
+    display: flex;
+    align-items: center;
+}
+
+nav .container .text {
+    padding-left: 15px;
+}
+
+nav .container .left img {
+    width: 65px;
+}
+
+nav .container .left h6 {
+    margin: 0;
+    color: white;
+}
+
+nav .container .left p {
+    margin: 0;
+    color: #a7a5a5;
+    font-size: 14px;
+}
+
+
+nav .container .right ul li {
+    display: inline-block;
+    color: white;
+    margin-inline: 5px;
+    padding-inline: 20px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    transition: all .5s;
+}
+
+nav .container .right ul li:hover {
+    color: var(--color-of-blue);
+    border-color: var(--color-of-blue);
+}
+
+nav .container .right ul li:first-child {
+    color: var(--color-of-blue);
+    border: 2px solid var(--color-of-blue);
+    border-radius: 25px;
+}
+
+
+
+.home {
+    min-height: calc(100vh - 150px);
+    background-image: url(../Images/banner.png);
+    background-repeat: no-repeat;
+    background-color: var(--color-of-backGround);
+}
+
+
+.home .container {
+    padding-top: 70px;
+}
+
+.home .search-input input:last-child {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    color: white !important;
+    background-color: var(--color-of-blue);
+    border-color: transparent;
+    border-radius: 30px;
+}
+
+.home .search-input input:first-child {
+    color: white !important;
+    background: var(--color-of-backGround);
+    padding-inline: 20px;
+    border-color: transparent;
+}
+
+.home .search-input input:first-child:focus {
+    background-color: var(--color-of-backGround);
+    outline: none !important;
+    border: none !important;
+}
+
+
+.main .row>div {
+    background-color: var(--color-of-blue);
+}
+
+.main li {
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+.main li img {
+    padding-right: 5px;
+}

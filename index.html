@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Style/all.min.css" />
+    <link rel="stylesheet" href="Style/bootstrap.min.css" />
+    <link rel="stylesheet" href="Style/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="left">
+          <a href="#"> <img src="Images/logo@2x.png" alt="" /> </a>
+          <div class="text">
+            <h6>Weather</h6>
+            <p>tagline goes here</p>
+          </div>
+        </div>
+        <div class="right">
+          <ul>
+            <li>Home</li>
+            <li>News</li>
+            <li>Live Camers</li>
+            <li>Photos</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="search">
+        <div class="container">
+          <div class="position-relative search-input">
+            <input
+              type="text"
+              placeholder="Find Your Location..."
+              class="form-control rounded-5 py-3"
+            />
+
+            <input type="button" value="Find" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 bg-secondary">
+              <p class="py-2" id="whatADay"></p>
+              <p id="city">Cairo</p>
+              <h1>
+                <span id="temp">19</span> &deg; C
+                <img src="" alt="" id="day" />
+              </h1>
+              <p class="text-info" id="text">Partly cloudy</p>
+              <ul>
+                <li>
+                  <img src="Images/icon-umberella.png" alt="" /><span
+                    id="Precipitation"
+                    >20%</span
+                  >
+                </li>
+                <li>
+                  <img src="Images/icon-wind.png" alt="" /><span
+                    id="speedOfWind"
+                    >18km/h</span
+                  >
+                </li>
+                <li>
+                  <img src="Images/icon-compass.png" alt="" /><span id="wind"
+                    >East</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 bg-secondary">
+              <p class="py-2" id="whatANextDay"></p>
+              <p><img src="" alt="" id="photoNextDay" /></p>
+              <p id="maxNextDay">19 &deg; C</p>
+              <span id="minNextDay">11.1 &deg;</span>
+              <p id="textNextDay">Sunny</p>
+            </div>
+            <div class="col-md-4 bg-secondary">
+              <p class="py-2" id="whatANextNextDay"></p>
+              <p><img src="" alt="" id="photoNextNextDay" /></p>
+              <p id="maxNextNextDay">19 &deg; C</p>
+              <span id="minNextNextDay">12.3 &deg;</span>
+              <p id="textNextNextDay">Sunny</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
